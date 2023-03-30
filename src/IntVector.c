@@ -49,11 +49,9 @@ IntVector *int_vector_copy(const IntVector *v)
 
 void int_vector_free(IntVector *v)
 {
-    if(v !=NULL)
-    {
-        free(v->item);
-        free(v);
-    }
+
+    free(v->item);
+    free(v);
 
 }
 
