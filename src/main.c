@@ -124,7 +124,5 @@ int main()
     int_vector_free(v); 
     int_vector_free(copy_v);
 
-    int_vector_free(NULL); 
-
     return 0;
 }
