@@ -49,8 +49,12 @@ IntVector *int_vector_copy(const IntVector *v)
 
 void int_vector_free(IntVector *v)
 {
-    free(v->item);
-    free(v);
+    if(v !=NULL)
+    {
+        free(v->item);
+        free(v);
+    }
+
 }
 
 int int_vector_get_item(const IntVector *v, size_t index)
