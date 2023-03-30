@@ -9,7 +9,7 @@ int main()
     printf(" Size: %ld\n", int_vector_get_size(v));
 
     int_vector_resize(v, v->capacity);
-    printf("*Resize vecto*\n");
+    printf("*Resize vector*\n");
     printf(" Capacity: %ld\n", int_vector_get_capacity(v));
     printf(" Size: %ld\n", int_vector_get_size(v));
 
@@ -123,6 +123,8 @@ int main()
     printf("~Free~\n"); 
     int_vector_free(v); 
     int_vector_free(copy_v);
-    
+
+    int_vector_free(NULL); 
+
     return 0;
 }
